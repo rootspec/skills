@@ -49,3 +49,13 @@ touch ISSUES.md
 ### release
 
 No extra setup — the agent runs `scripts/release.sh` directly from the installed skill directory. Requires `npm`, `git`, and `gh` (GitHub CLI).
+
+---
+
+## Keeping skills up to date
+
+The skills CLI installs **copies** of skills into `.agents/skills/` — they are not live-linked to this repo. When a new version is released, update your installed skills:
+
+```bash
+npx skills update
+```

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "commit": {
+      "source": "/Users/cbrown/Dev/rootspec-skills/catalog",
+      "sourceType": "local",
+      "computedHash": "5ab1909b8a1a148e114acd580c6f32bbaf88ae1bcef3d1608b8050508d017551"
+    },
+    "issues": {
+      "source": "/Users/cbrown/Dev/rootspec-skills/catalog",
+      "sourceType": "local",
+      "computedHash": "e0a5eb16b15ef40be7cc623d0d9483a307a2fffe9f206e1c431a20b637b5589e"
+    },
+    "release": {
+      "source": "/Users/cbrown/Dev/rootspec-skills/catalog",
+      "sourceType": "local",
+      "computedHash": "21a281aa3dca82f1301593d96dd9d9d03d517d28501e84706cba01b950135462"
+    }
+  }
+}
