@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-02-21
+
 ### Added
 
 - `commit` skill — stages files, updates CHANGELOG.md, and creates a Conventional Commit

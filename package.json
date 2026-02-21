@@ -1,6 +1,6 @@
 {
   "name": "@rootspec/skills",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A curated collection of AI agent skills for rootspec projects",
   "repository": {
     "type": "git",
