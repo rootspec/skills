@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Renamed `catalog/` → `skills/` so `npx skills add <repo>` discovers all skills without manual workarounds
+
 ## [1.1.0] - 2026-02-22
 
 ### Added
