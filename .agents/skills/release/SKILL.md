@@ -20,10 +20,18 @@ Read `CHANGELOG.md` and check what is listed under `## [Unreleased]`. Summarize 
 
 If your project has a user-facing changelog, update it now and commit before continuing.
 
-## Step 3 — Run the release script
+## Step 3 — Ensure `release` script exists in package.json
+
+Check if `package.json` has a `release` script. If not, add it:
+
+```json
+"release": ".agents/skills/release/scripts/release.sh"
+```
+
+## Step 4 — Run the release script
 
 ```bash
-echo "y" | scripts/release.sh [major|minor|patch]
+echo "y" | npm run release -- [major|minor|patch]
 ```
 
 > **Important:** The release script is interactive — it pauses and asks:
@@ -37,6 +45,6 @@ The script will:
 4. Commit, tag, and push to origin
 5. Create a GitHub release with the changelog notes
 
-## Step 4 — Confirm
+## Step 5 — Confirm
 
 Report the new version number and GitHub release URL to the user.
