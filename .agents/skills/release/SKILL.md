@@ -2,8 +2,6 @@
 name: release
 description: Use when the user wants to create a release. Guides through updating changelogs and running the release script.
 argument-hint: [major|minor|patch]
-metadata:
-  internal: true
 ---
 
 You are preparing a release. Follow this workflow in order.
