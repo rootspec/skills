@@ -19,6 +19,7 @@ npx skills add rootspec/rootspec-skills
 | Skill | Description |
 |-------|-------------|
 | **commit** | Stages files, updates CHANGELOG.md, and creates a Conventional Commit |
+| **dev** | Manage the dev server — setup, start, stop, restart, or check status |
 | **issues** | View, add, update, or close issues tracked in ISSUES.md |
 | **release** | Guides through changelog updates and runs the release script |
 
@@ -45,6 +46,26 @@ Create `ISSUES.md` in the project root (can start empty):
 ```bash
 touch ISSUES.md
 ```
+
+### dev
+
+Run `/dev setup` once per project. Claude will detect your framework and port, then write the `dev:raw` command and wrapper scripts into `package.json`.
+
+After setup:
+
+| Command | Action |
+|---------|--------|
+| `npm run dev` / `npm run dev:start` | Start server in background (detached via nohup) |
+| `npm run dev:stop` | Stop server (Ctrl+C won't work since it's detached) |
+| `npm run dev:status` | Show PID and log path |
+| `npm run dev:restart` | Stop + start cycle |
+| `tail -f logs/dev.log` | Stream live logs |
+| `PORT=5173 npm run dev` | Override port at start time |
+
+Notes:
+- PID tracked in `.dev/dev.pid`, logs in `logs/dev.log`
+- On start, any existing process on the port is killed before launching
+- The `dev.sh` script lives in the skill directory — no copy is made to your project
 
 ### release
 
