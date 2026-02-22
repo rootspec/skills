@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-02-22
+
 ### Added
 
 - `dev` skill — manage dev server with start/stop/restart/status; setup detects framework and writes package.json scripts
