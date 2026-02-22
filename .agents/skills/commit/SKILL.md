@@ -1,6 +1,8 @@
 ---
 name: commit
 description: Use when the user wants to commit changes. Stages files, updates CHANGELOG.md, and creates a commit following project conventions.
+metadata:
+  internal: true
 ---
 
 You are making a git commit for this project. Follow these steps carefully.

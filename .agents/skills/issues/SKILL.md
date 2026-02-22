@@ -2,6 +2,8 @@
 name: issues
 description: Use when the user wants to view, add, update, or close issues. Manages ISSUES.md for this project.
 argument-hint: "[add|close|list] [description]"
+metadata:
+  internal: true
 ---
 
 You are managing `ISSUES.md` for this project. This file tracks **incomplete or recently completed** issues (bugs, features, etc.).
